@@ -1,3 +1,23 @@
-:root {
-    box-shadow: rgba();
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
+
+:root{
+    --mount-meadow: blue;
+    --white-smoke: #f0f0f0;
+    --night-rider: blue;
+    --black: #17171b;
+    --transition: all 0.5s ease-in-out;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    color: var(--black);
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
 }
