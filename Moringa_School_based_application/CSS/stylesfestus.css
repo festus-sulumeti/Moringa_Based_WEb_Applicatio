@@ -12,6 +12,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 html{
     color: var(--black);
@@ -20,4 +22,89 @@ html{
     line-height: 1.5;
     text-rendering: optimizeLegibility;
     scroll-behavior: smooth;
+}
+
+.outer-wrap{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--white-smoke);
+    padding: 30px;
+}
+
+inner-wrap{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.heading .title{
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--mount-meadow);
+}
+
+.heading{
+    margin-bottom: 30px; 
+}
+
+.heading .subtitle{
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+    color: var(--night-rider);
+}
+
+.kanban{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    min-height: 80vh;
+}
+
+.taskbox{
+    min-width: 300px;
+    max-width: 500px;
+    background-color: var(--white-smoke);
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: var(--transition); 
+    margin: 0 15px;
+    display: flex;  
+    flex-direction: column;
+}
+
+.taskbox .title{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: var(--mount-meadow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.taskbox.title span{
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--night-rider);
+    border-radius: 7px;
+}
+
+.card{
+    background-color: var(--white-smoke);
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+    transition: var(--transition);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
 }
